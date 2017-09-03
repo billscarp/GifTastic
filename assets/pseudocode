@@ -1,0 +1,46 @@
+Var sitcoms
+
+I will make an array that will include the following strings:
+
+Friends
+That 70's Show
+Fresh Prince
+Everybody Loves Raymond
+Home Improvement
+Full House
+The Simpsons
+Seinfeld
+Will and Grace
+MASH
+
+
+
+using Jquery I need to make buttons using this method that we learned from doing the homework exercise:
+
+
+     // Function for displaying movie data
+      function renderButtons() {
+
+       $("#movies-view").empty();
+        $.each(movies, function (index,value) {
+          var b = $("<button>")
+            b.addClass("movies")
+            b.attr("data-name",movies[index])
+            b.text(movies[index]),
+            $("#movies-view").append(b);
+
+$("#add-movie").on("click", function () {
+         
+         
+         
+         event.preventDefault();
+
+         var newMovie = $("#movie-input").val().trim();
+          console.log(newMovie);
+
+         movies.push(newMovie);
+          $("#movie-input").val("");
+          $("#movies-view").empty();
+          renderButtons();
+
+Next 
