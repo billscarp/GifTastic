@@ -52,7 +52,7 @@ $(document).ready(function () {
 			var results = response.data;
 			
 			for (var i = 0; i < results.length; i++) {
-				var sitcomDiv = $(".item");
+				var gifDiv = $(".item");
 				
 				var rating = results[i].rating;
 				
@@ -64,7 +64,7 @@ $(document).ready(function () {
 				gifDiv.append(p);
 				gifDiv.append(sitcomImage);
 				
-				$("#gifs-appear-here").append("gifDiv");
+				$("#gifs-appear-here").append(gifDiv);
 			}
 		});
 	});
