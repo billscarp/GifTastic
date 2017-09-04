@@ -38,20 +38,20 @@ $(document).ready(function () {
 
 
     // Here I am going to add the API and ajax the way we did in our homework to bring in the gifs
-    $("button").on("click", function() {
-        var sitcom = $(this).attr("data-sitcom");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-          sitcom + "&api_key=6e575d67725e411280acd5e1a3c802a6";
-
+    $(".button2").on("click", function() {
+        var sitcom = $(this).attr("data-name");
+        console.log(sitcom);
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=6e575d67725e411280acd5e1a3c802a6&q=" + sitcom + "&limit=10&offset=0&rating=G&lang=en";
     $.ajax({
         url: queryURL,
         method: "GET"
       })
       .done(function(response) {
+        console.log(response)
         var results = response.data;
 
         for (var i = 0; i < results.length; i++) {
-          var sitcomDiv = $("<div class='item'>");
+          var sitcomDiv = $(".item");
 
           var rating = results[i].rating;
 
