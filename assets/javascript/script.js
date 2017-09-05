@@ -63,8 +63,9 @@ $(document).ready(function () {
 				
 				gifDiv.append(p);
 				gifDiv.append(sitcomImage);
+				console.log(sitcomImage);
 				
-				$("#gifs-appear-here").append(gifDiv);
+				$("#gifs-appear-here").append(sitcomImage);
 			}
 		});
 	});
