@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	// Array of Sitcoms
-	var topics = ["Friends", "That 70's Show", "Fresh Prince", "Everybody Loves Raymond", "Home Improvment", "Full House", "Simpsons", "Seinfeld", "Will & Grace", "Mash"];
+	var topics = ["Friends", "That 70's Show", "Fresh Prince", "Everybody Loves Raymond", "Home Improvment", "Full House", "Simpsons", "Seinfeld", "Will and Grace", "Mash"];
 	
 	// Function for displaying movie data
 	function renderButtons() {
@@ -37,7 +37,7 @@ $(document).ready(function () {
 	
 	
 	// Here I am going to add the API and ajax the way we did in our homework to bring in the gifs
-	$(".button2").on("click", function() {
+	$(document).on("click", ".button2", function() {
 		var sitcom = $(this).attr("data-name");
 		console.log(sitcom);
 		
@@ -66,6 +66,8 @@ $(document).ready(function () {
 				console.log(sitcomImage);
 				
 				$("#gifs-appear-here").append(sitcomImage);
+
+				
 			}
 		});
 	});
