@@ -60,13 +60,49 @@ $(document).ready(function () {
 				
 				var sitcomImage = $("<img>");
 				sitcomImage.attr("src", results[i].images.fixed_height.url);
-				
+
 				gifDiv.append(p);
 				gifDiv.append(sitcomImage);
 				console.log(sitcomImage);
 				
 				$("#gifs-appear-here").append(sitcomImage);
 
+
+				// Trying to start and stop gifs
+					
+				$(".document").on("click", "sitcomImage", function() {
+
+					var state =
+					$(this).attr("data-state");
+					console.log(state);
+		   
+					var state_animate =
+					$(this).attr("data-animate");
+					console.log(state_animate);
+		   
+					var state_still =
+					$(this).attr("data-still");
+					console.log(state_still);
+
+					if (state === "still"); {
+						$(this).attr("data-state", "animate");
+						$(this).attr("src",state_animate );
+			
+					}
+
+					if (state === "animate") {
+						
+									$(this).attr("src", state_still);
+									$(this).attr("data-state", "still");
+								}
+
+			});	
+								
+						
+						
+		
+				
+				
 				
 			}
 		});
