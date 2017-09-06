@@ -37,6 +37,7 @@ $(document).ready(function () {
 	
 	
 	// Here I am going to add the API and ajax the way we did in our homework to bring in the gifs
+
 	$(document).on("click", ".button2", function() {
 		var sitcom = $(this).attr("data-name");
 		console.log(sitcom);
@@ -96,13 +97,7 @@ $(document).ready(function () {
 									$(this).attr("data-state", "still");
 								}
 
-			});	
-								
-						
-						
-		
-				
-				
+			});		
 				
 			}
 		});

@@ -50,3 +50,9 @@ Add event listener to bring in new sitcom choices when someone clicks the form b
 Loop that brings in results from each gif
 
 set up a click event and  conditional statements to start and stop gifs.
+
+Need to add 3 attributes: 
+
+current state
+state animate 
+state still
