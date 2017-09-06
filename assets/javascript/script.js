@@ -70,7 +70,7 @@ $(document).ready(function () {
 
 				// Trying to start and stop gifs
 					
-				$(".document").on("click", "sitcomImage", function() {
+				$("#gifs-appear-here").on("click","", function() {
 
 					var state =
 					$(this).attr("data-state");

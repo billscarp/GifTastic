@@ -44,3 +44,9 @@ $("#add-movie").on("click", function () {
           renderButtons();
 
 Next 
+
+Add event listener to bring in new sitcom choices when someone clicks the form button.
+
+Loop that brings in results from each gif
+
+set up a click event and  conditional statements to start and stop gifs.
